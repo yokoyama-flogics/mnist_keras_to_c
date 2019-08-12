@@ -150,21 +150,7 @@ int mnist_run(float const input[HEIGHT][WIDTH], float output[N_OUTPUTS])
     flatten_1(input, dense_1_input);
     dense_1(dense_1_input, relu_1_input);
     relu(relu_1_input, dense_2_input, N_DENSE_1);
-
-#if 0
-    for (int i = 0; i < N_DENSE_1; i ++)
-        printf("%f\n", dense_2_input[i]);
-    exit(0);
-#endif
-
     dense_2(dense_2_input, relu_2_input);
-
-#if 0
-    for (int i = 0; i < N_DENSE_2; i ++)
-        printf("%f\n", relu_2_input[i]);
-    exit(0);
-#endif
-
     softmax(relu_2_input, output, N_DENSE_2);
 
     return 0;
