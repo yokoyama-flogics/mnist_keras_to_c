@@ -71,12 +71,10 @@ static int dense(
         out = 0.0;
 
         for (i_in = 0; i_in < n_input; i_in ++) {
-            // out += weight[i_node * n_output + i_in] + bias[i_node];
             out += weight[i_in * n_output + i_node] * input[i_in];
         }
 
         output[i_node] = out + bias[i_node];
-        // printf("bias %f\n", bias[i_node]);
     }
 
     return 0;
