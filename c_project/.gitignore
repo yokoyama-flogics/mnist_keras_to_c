@@ -1,0 +1,6 @@
+build/mnist_c
+build/src/*.d
+build/src/*.o
+src/params.h
+src/test_images.[ch]
+src/test_labels.[ch]
