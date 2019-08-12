@@ -3,9 +3,9 @@
 This is a very simple example to translate already trained Keras
 (slightly) deep neural network model to C language project.
 
-Recently, we can access some well organized projects which can
-converts Keras model to C project, but I wrote this because I wanted
-to understand Keras and deep neural network models much deeper.
+Recently, we can access some well organized projects which can convert
+Keras model to C project, but I wrote this because I wanted to
+understand Keras and deep neural network models much deeper.
 
 ## Sample Keras model
 
